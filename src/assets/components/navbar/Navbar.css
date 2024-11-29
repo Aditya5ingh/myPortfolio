@@ -1,0 +1,115 @@
+.nav-bar {
+  padding: 16px 0;
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #d9d9d9;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1720px;
+}
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+/* ---------------------------------------------LOGO MENU-------------------------------------- */
+.logo-menu {
+  max-width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  max-width: 5rem;
+  margin-right: 3rem;
+}
+.logo img {
+  width: 4.7rem;
+}
+.menu {
+  max-width: 500px;
+}
+.menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.menu ul li {
+  line-height: 1.15;
+  font-weight: 500;
+}
+.menu ul li + li {
+  padding-left: 1rem;
+}
+
+/* -----------------------------------------right NAVBAR---------------------------------------------- */
+
+.button-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+}
+.button button {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #080a45;
+  margin: auto 2rem;
+  border-radius: 1.5rem;
+}
+.button button a {
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/*-------------------------------- TOGGLE BUTTON----------------------- */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #080a45;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #fff;
+  z-index: 99;
+}
+
+.fa-sun {
+  color: #f39c12;
+  z-index: 99;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(23px);
+}
