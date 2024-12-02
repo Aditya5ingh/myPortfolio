@@ -1,0 +1,40 @@
+.project-slides {
+  width: 100%;
+  padding: 2.4rem 0;
+  overflow: hidden;
+}
+.slide-container {
+  position: relative;
+  max-width: 80%;
+
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.slider {
+  display: flex;
+  gap: 1rem;
+  animation: sliding 10s linear infinite;
+}
+
+.slider img {
+  height: 38rem;
+  width: 40rem;
+  object-fit: cover;
+}
+
+.slider:hover {
+  animation-play-state: paused;
+}
+.slider img:hover {
+  transform: scale(1.035);
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-41rem * 5));
+  }
+}

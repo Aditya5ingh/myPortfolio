@@ -30,7 +30,7 @@ export default function Navbar() {
             </div>
             <div className="toggle">
               <input type="checkbox" className="checkbox" id="checkbox" />
-              <label for="checkbox" className="checkbox-label">
+              <label htmlFor="checkbox" className="checkbox-label">
                 <FontAwesomeIcon icon={faMoon} className="fa-moon" />
                 <FontAwesomeIcon icon={faSun} className="fa-sun" />
                 <span className="ball"></span>

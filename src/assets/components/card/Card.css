@@ -1,0 +1,65 @@
+.cardArea {
+  margin: 2rem;
+  padding: 2rem;
+  width: 30%;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* < ----Radial Bar ---------------------->*/
+.skillbar {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(#d9d9d9 50%, #080a45 50%);
+}
+.overlay {
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  font-size: 4rem;
+}
+
+/* ------------------------SKILLS DETAILS=--------------------------------------- */
+
+.skill-details {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillTitle {
+  font-size: 3rem;
+}
+
+.skill-details p {
+  font-size: 0.8rem;
+  font-weight: 450;
+  margin: auto 1.2rem;
+  text-align: justify;
+}
+
+.skill-details a {
+  text-decoration: none;
+  width: 100%;
+  margin: 0.5rem;
+  text-align: right;
+  font-size: 0.8rem;
+}
