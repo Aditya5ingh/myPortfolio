@@ -3,6 +3,7 @@ import CTA1 from "../../assets/components/cta1/CTA1.jsx";
 import Navbar from "../../assets/components/navbar/Navbar.jsx";
 import Project from "../../assets/components/Projects/Project.jsx";
 import Skills from "../../assets/components/skills/Skills.jsx";
+import Wicd from "../../assets/components/wicd/Wicd.jsx";
 
 export default function Landing() {
   return (
@@ -12,6 +13,7 @@ export default function Landing() {
       <Project />
       <Skills />
       <CTA1 />
+      <Wicd />
     </div>
   );
 }
