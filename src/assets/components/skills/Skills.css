@@ -1,7 +1,7 @@
 .skills-section {
   z-index: 99;
   padding: 7rem;
-  background-color: aliceblue;
+  background-color: var(--whiter);
 }
 .skill-wrapper {
   z-index: 9;
@@ -14,11 +14,11 @@
 }
 
 .active {
-  border-left: 2px solid #080a45;
+  border-left: 2px solid var(--blue4);
 }
 .skillImage {
   width: 50%;
-  border: 0.5px solid rgba(8, 10, 69, 0.2);
+  border: 0.5px solid var(--blue4);
 }
 .feature1 {
   object-fit: cover;

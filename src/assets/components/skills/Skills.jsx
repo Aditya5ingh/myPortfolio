@@ -19,7 +19,7 @@ const Skills = () => {
           <div className="skillImage">
             <div className="image-container">
               <img
-                style={{ objectFit: "contain" }}
+                style={{ objectFit: "fill" }}
                 src={image1}
                 alt=""
                 className={`${activeElement === 0 ? "present" : ""} feature1`}

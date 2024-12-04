@@ -2,7 +2,7 @@
   padding: 16px 0;
   width: 100%;
   font-size: 1.6rem;
-  background-color: #d9d9d9;
+  background-color: var(--white);
 }
 .container {
   margin: 0 auto;
@@ -43,8 +43,14 @@
   line-height: 1.15;
   font-weight: 500;
 }
+.menu a:hover {
+  color: black;
+}
 .menu ul li + li {
-  padding-left: 1rem;
+  padding-left: 2rem;
+}
+.menu a {
+  text-decoration: none;
 }
 
 /* -----------------------------------------right NAVBAR---------------------------------------------- */
@@ -58,26 +64,35 @@
 .button button {
   padding: 1rem 2rem;
   border: none;
-  background-color: #080a45;
+  background-color: var(--blue4);
   margin: auto 2rem;
   border-radius: 1.5rem;
+  transition: all 1s;
 }
 .button button a {
   text-wrap: nowrap;
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   font-size: 1.6rem;
   font-weight: 600;
+}
+.button button:hover {
+  background-color: var(--whiter);
+}
+.button button:hover a {
+  color: var(--blue4);
 }
 
 /*-------------------------------- TOGGLE BUTTON----------------------- */
 .checkbox {
   opacity: 0;
   position: absolute;
+  height: 26px;
+  width: 20px;
 }
 
 .checkbox-label {
-  background-color: #080a45;
+  background-color: var(--blue4);
   width: 50px;
   height: 26px;
   border-radius: 50px;
@@ -90,7 +105,7 @@
 }
 
 .fa-moon {
-  color: #fff;
+  color: var(--white);
   z-index: 99;
 }
 
@@ -100,7 +115,7 @@
 }
 
 .checkbox-label .ball {
-  background-color: #fff;
+  background-color: var(--whiter);
   width: 22px;
   height: 22px;
   position: absolute;

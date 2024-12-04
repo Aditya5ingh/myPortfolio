@@ -5,8 +5,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #080a45;
+  color: var(--blue4);
 }
 :root {
   font-size: 10px;
+}
+
+body {
+  --white: #d9d9d9;
+  --blue1: #8f84d2;
+  --blue2: #585ab3;
+  --blue3: #23297f;
+  --blue4: #080a45;
+  --whiter: #fff;
+}
+
+body.dark {
+  --white: #23297f;
+  --blue1: #f3eaea;
+  --blue2: #dbcaca;
+  --blue3: #d9d9d9;
+  --blue4: #fff;
+  --whiter: #080a45;
 }

@@ -30,11 +30,11 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
-  border: 2px none #b3c1e6;
+  border: 2px none #8f84d2;
 }
 
 .intro-section h1 {
-  color: white;
+  color: #fff;
   line-height: 1.3;
   font-size: 10rem;
   position: relative;
@@ -49,20 +49,20 @@
 }
 
 .salute {
-  color: white;
+  color: #fff;
   font-size: 4rem;
   font-weight: 600;
 }
 
 .para {
-  color: white;
+  color: #fff;
   margin: 1rem auto;
   font-size: 2.5rem;
   font-weight: 600;
 }
 
 .folio {
-  color: white;
+  color: #fff;
   font-size: 3rem;
   font-weight: 600;
 }
@@ -78,8 +78,8 @@
 }
 
 .projects-button:hover {
-  background-color: #0e1164;
-  color: #fff;
+  background-color: #23297f;
+  color: #d9d9d9;
 }
 .projects-button:hover a {
   color: #fff;
@@ -87,6 +87,8 @@
 
 .projects-button a {
   text-decoration: none;
+  color: #080a45;
+  font-weight: 500;
   transition: all 1s;
 }
 /* ------------------------------PARTICLES------------------------ */
