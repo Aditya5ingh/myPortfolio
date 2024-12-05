@@ -3,7 +3,7 @@ import "./CTA1.css";
 
 const CTA1 = () => {
   return (
-    <div className="CTA1-section">
+    <div id="Cta" className="CTA1-section">
       <div className="container">
         <div className="wrapper">
           <div className="back-div2">

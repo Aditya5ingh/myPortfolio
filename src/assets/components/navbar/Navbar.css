@@ -15,6 +15,13 @@
   padding: 0 10rem;
 }
 
+.dropper {
+  position: relative;
+  display: none;
+}
+.dropdown1 {
+  cursor: pointer;
+}
 /* ---------------------------------------------LOGO MENU-------------------------------------- */
 .logo-menu {
   max-width: 600px;
@@ -39,6 +46,7 @@
   justify-content: space-between;
   list-style: none;
 }
+
 .menu ul li {
   line-height: 1.15;
   font-weight: 500;
@@ -127,4 +135,59 @@
 
 .checkbox:checked + .checkbox-label .ball {
   transform: translateX(23px);
+}
+
+/* ICON RESPONSIVE */
+
+.icon {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 3rem;
+}
+@media screen and (max-width: 800px) {
+  .logo-menu,
+  .button-menu {
+    display: none;
+  }
+  .icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .logo-menu.responsive {
+    position: absolute;
+    z-index: 9;
+    top: 5rem;
+    right: 10rem;
+    display: block;
+  }
+  .logo-menu.responsive .logo {
+    display: none;
+  }
+  .logo-menu.responsive .menu ul {
+    display: block;
+
+    text-align: left;
+  }
+  .logo-menu.responsive .menu {
+    width: 15rem;
+  }
+  .logo-menu.responsive .menu li {
+    border: 2px solid var(--blue4);
+    border-radius: 15px;
+    padding-left: 0.5rem;
+    background-color: var(--white);
+    transition: all 1s;
+  }
+  .logo-menu.responsive .menu li:hover {
+    color: var(--whiter);
+    background-color: var(--blue4);
+  }
+
+  .logo-menu.responsive .menu li:hover a {
+    color: var(--whiter);
+  }
 }

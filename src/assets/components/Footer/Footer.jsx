@@ -7,7 +7,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer-section">
+    <div id="footer" className="footer-section">
       <div className="footer-container">
         <div className="footer-wrapper">
           <div className="top-area">

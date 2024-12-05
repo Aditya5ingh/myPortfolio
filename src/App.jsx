@@ -1,12 +1,17 @@
-import { useState } from "react";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Landing from "./pages/landing/Landing";
+import Link from "./pages/link/Link";
 
 function App() {
   return (
     <>
-      <Landing />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/link" element={<Link />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
