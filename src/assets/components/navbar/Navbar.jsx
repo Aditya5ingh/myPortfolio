@@ -98,10 +98,10 @@ export default function Navbar() {
                 </li>
 
                 <li>
-                  <Link to="/">Projects</Link>
+                  <Link to="/project">Projects</Link>
                 </li>
                 <li>
-                  <Link to="/link">Contact</Link>
+                  <Link to="/project">Contact</Link>
                 </li>
               </ul>
             </div>

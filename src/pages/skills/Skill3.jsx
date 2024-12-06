@@ -2,14 +2,14 @@ import React from "react";
 import Navbar from "../../assets/components/navbar/Navbar";
 import Hero from "../../assets/components/heroBanner/Hero";
 
-const Link = () => {
+const Skill3 = () => {
   return (
     <div>
       <Navbar />
-      <Hero title="hello" />
-      this is a linked page
+      <Hero title="All projects are here" />
+      AllProjects
     </div>
   );
 };
 
-export default Link;
+export default Skill3;

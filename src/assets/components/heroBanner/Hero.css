@@ -1,0 +1,30 @@
+.hero-banner {
+  width: 100%;
+  padding: 16px 0;
+  background: linear-gradient(to left, #ccc, #f38282 30%);
+}
+.hero-container {
+  max-width: 1720px;
+  margin: 0 auto;
+}
+.content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 17rem;
+}
+
+.breadcrums ul li {
+  list-style: none;
+  display: inline;
+}
+.breadcrums ul a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.titleArea {
+  font-size: 3rem;
+  text-transform: capitalize;
+}

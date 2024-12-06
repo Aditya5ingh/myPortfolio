@@ -7,25 +7,17 @@ const Dropdown = () => {
     <div className="dropdown-section">
       <div className="dropdown-container">
         <div className="dropWrapper">
-          <Link to="/link">
-            <a href="#" className="link1">
-              Link1
-            </a>
+          <Link to="/skill1" className="link1">
+            Link1
           </Link>
-          <Link to="/link">
-            <a href="#" className="link1">
-              Link2
-            </a>
+          <Link to="/skill2" className="link1">
+            Link2
           </Link>
-          <Link to="/link">
-            <a href="#" className="link1">
-              Link3
-            </a>
+          <Link to="/skill3" className="link1">
+            Link3
           </Link>
-          <Link to="/link">
-            <a href="#" className="link1">
-              Link4
-            </a>
+          <Link to="/slill4" className="link1">
+            Link4
           </Link>
         </div>
       </div>
