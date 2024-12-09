@@ -91,3 +91,22 @@
   font-size: 6rem;
   margin: 2rem auto;
 }
+
+.social-icon {
+  font-size: 3.5rem;
+  /* background-color: var(--blue1); */
+  border-radius: 40%;
+  padding: 0.5rem;
+  /* color: aliceblue !important; */
+  transition: all 0.5s;
+}
+
+.socials {
+  padding: 2rem;
+  display: flex;
+  color: var(--whiter);
+  justify-content: space-around;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}

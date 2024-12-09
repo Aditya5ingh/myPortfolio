@@ -1,0 +1,42 @@
+.bttcontainer {
+  z-index: 9;
+  position: sticky;
+  bottom: 2rem;
+  float: right;
+  margin-right: 2rem;
+  overflow: hidden;
+  display: none;
+}
+
+.arrow h2 {
+  font-size: 3rem;
+  color: black;
+}
+
+.arrow {
+  background-color: var(--blue1);
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  animation: all 1s;
+  overflow: hidden;
+}
+.arrow:hover h2 {
+  overflow: hidden;
+  animation: slideup 2s;
+}
+@keyframes slideup {
+  from {
+    position: absolute;
+    z-index: -1;
+    bottom: -1rem;
+  }
+  to {
+    z-index: 1;
+    bottom: 0.8rem;
+  }
+}
