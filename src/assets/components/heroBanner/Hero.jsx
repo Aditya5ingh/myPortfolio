@@ -17,10 +17,16 @@ const Hero = (props) => {
           <div className="breadcrums">
             <ul>
               <li>
-                <Link to="/"> Home </Link>
+                <Link to="/" className="linktag">
+                  {" "}
+                  Home{" "}
+                </Link>
               </li>
               <li>
-                <Link to={state}> {state} </Link>
+                <Link to={state} className="linktag">
+                  {" "}
+                  {state}{" "}
+                </Link>
               </li>
             </ul>
           </div>

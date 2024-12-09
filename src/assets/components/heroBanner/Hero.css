@@ -1,7 +1,7 @@
 .hero-banner {
   width: 100%;
   padding: 16px 0;
-  background: linear-gradient(to left, #ccc, #f38282 30%);
+  background: linear-gradient(to bottom, #585ab3, #23297f 50%);
 }
 .hero-container {
   max-width: 1720px;
@@ -27,4 +27,10 @@
 .titleArea {
   font-size: 3rem;
   text-transform: capitalize;
+  color: #00fff2;
+  text-shadow: 0 0 3px #000;
+}
+
+.linktag {
+  color: #ccc;
 }

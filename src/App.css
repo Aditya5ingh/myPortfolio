@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--blue4);
+  user-select: none;
 }
 :root {
   font-size: 10px;
