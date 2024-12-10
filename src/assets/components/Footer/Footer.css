@@ -110,3 +110,22 @@
 .social-icon:hover {
   transform: scale(1.2);
 }
+
+.giveLikes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  box-shadow: 0 0 1rem var(--blue1);
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.buttonToSwap {
+  padding: 5px 15px;
+
+  align-self: center;
+  justify-self: center;
+}

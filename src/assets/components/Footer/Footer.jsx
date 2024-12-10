@@ -3,12 +3,36 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
+import { faThumbsUp } from "@fortawesome/free-regular-svg-icons";
+import App from "../../../App";
 
-const Footer = () => {
+const Footer = ({ count, clicked }) => {
+  // const iconData = [
+  //   {
+  //     id: "icon1",
+  //     refer: "https://www.instagram.com/aditya._singh11/",
+  //     icon: "faInstagram",
+  //   },
+  //   {
+  //     id: "icon2",
+  //     refer: "https://www.instagram.com/aditya._singh11/",
+  //     icon: "faTwitter",
+  //   },
+  //   {
+  //     id: "icon3",
+  //     refer: "https://www.instagram.com/aditya._singh11/",
+  //     icon: "faFacebook",
+  //   },
+  // ];
+
+  function swapDiv() {
+    const elem = document.getElementsByClassName("iconif")[2];
+    elem.parentNode.insertBefore(elem, elem.parentNode.firstChild);
+  }
   return (
     <div id="footer" className="footer-section">
       <div className="footer-container">
@@ -19,16 +43,20 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/aditya._singh11/"
                 target="_blank"
+                className="iconif"
               >
                 <FontAwesomeIcon icon={faInstagram} className="social-icon" />
               </a>
-              <a href="">
+              <a href="" className="iconif">
                 <FontAwesomeIcon icon={faTwitter} className="social-icon" />
               </a>
-              <a href="">
+              <a href="" className="iconif">
                 <FontAwesomeIcon icon={faFacebook} className="social-icon" />
               </a>
             </div>
+            <button onClick={swapDiv} className="buttonToSwap">
+              swap
+            </button>
             <div className="content-area-1">
               <h1>Contact Me</h1>
               <p>
@@ -36,6 +64,15 @@ const Footer = () => {
                 collaborations.
               </p>
             </div>
+          </div>
+          <div className="giveLikes">
+            <h2>Like count till now: {count}</h2>
+            <h5>Click on Like</h5>
+            <FontAwesomeIcon
+              icon={faThumbsUp}
+              className="social-icon"
+              onClick={clicked}
+            />
           </div>
           <div className="contact-cards">
             <div className="email-card card1">

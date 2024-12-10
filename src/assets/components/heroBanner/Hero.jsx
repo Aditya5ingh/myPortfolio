@@ -20,28 +20,23 @@ const Hero = (props) => {
         <div className="content-area">
           <div className="breadcrums">
             <ul>
-              {console.log(Object.values(state))}
               <li>
                 <Link to="/" className="linktag">
-                  Home
+                  Home&nbsp;
                 </Link>
               </li>
 
-              {Object.values(state).map((path, i) => {
+              {/* -------------------------------MAPPING OF BREADCRUMPS USING USELOCATION-------------------------------- */}
+              {Object.values(state).map((v, i) => {
+                const path = i > 0 ? Object.values(state)[i - 1] + "/" + v : v;
                 return (
-                  <li key={path}>
+                  <li key={i}>
                     <Link to={`/${path}`} className="linktag">
-                      {console.log(`/${path}`)}/ {path}
+                      / {v}&nbsp;{" "}
                     </Link>
                   </li>
                 );
               })}
-              {/* <li>
-                <Link to={state} className="linktag">
-                  {" "}
-                  {state}{" "}
-                </Link>
-              </li> */}
             </ul>
           </div>
           <h3 className="titleArea">{props.title}</h3>

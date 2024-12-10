@@ -9,13 +9,22 @@ import Skill2 from "./pages/skills/Skill2";
 import Skill3 from "./pages/skills/Skill3";
 import Skill4 from "./pages/skills/Skill4";
 import Skill from "./pages/skills/Skill";
+import { createContext, useState } from "react";
 // import { Outlet } from "react-router-dom";
+
 function App() {
+  const [count, setCount] = useState(0);
+  function clickedOnLike() {
+    setCount(count + 1);
+  }
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route
+            path="/"
+            element={<Landing nums={count} clickedOn={() => clickedOnLike()} />}
+          />
           <Route path="/link" element={<Link />} />
           <Route path="/project" element={<AllProjects />} />
           <Route path="/skills" element={<Skill />}>

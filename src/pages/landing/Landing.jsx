@@ -7,7 +7,7 @@ import Project from "../../assets/components/Projects/Project.jsx";
 import Skills from "../../assets/components/skills/Skills.jsx";
 import Wicd from "../../assets/components/wicd/Wicd.jsx";
 
-export default function Landing() {
+export default function Landing({ nums, clickedOn }) {
   return (
     <div>
       <Navbar />
@@ -16,7 +16,7 @@ export default function Landing() {
       <Skills />
       <CTA1 />
       <Wicd />
-      <Footer />
+      <Footer count={nums} clicked={clickedOn} />
       <Btt />
     </div>
   );
