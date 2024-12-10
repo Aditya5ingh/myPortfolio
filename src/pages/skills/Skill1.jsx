@@ -7,7 +7,7 @@ const Skill1 = () => {
     <div>
       <Navbar />
       <Hero title="All projects are here" />
-      AllProjects
+      AllProjects1
     </div>
   );
 };
