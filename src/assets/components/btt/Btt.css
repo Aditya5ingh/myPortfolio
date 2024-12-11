@@ -1,7 +1,7 @@
 .bttcontainer {
   z-index: 9;
   position: sticky;
-  bottom: 2rem;
+  bottom: 4rem;
   float: right;
   margin-right: 2rem;
   overflow: hidden;

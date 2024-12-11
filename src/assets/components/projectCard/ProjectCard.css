@@ -1,0 +1,22 @@
+.project-image figure img {
+  border-radius: 2rem;
+  width: 40rem;
+}
+.card-container {
+  width: 30%;
+  box-shadow: 0 0 10px var(--blue4);
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+.card-wrapper {
+  position: relative;
+}
+.project-image figure figcaption {
+  position: absolute;
+  top: 2rem;
+  border-radius: 2rem;
+
+  width: 100%;
+  background-color: var(--blue4);
+  color: var(--whiter);
+}

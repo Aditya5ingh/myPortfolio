@@ -17,9 +17,9 @@
 }
 
 .slider img {
-  height: 38rem;
+  height: 25rem;
   width: 40rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .slider:hover {
